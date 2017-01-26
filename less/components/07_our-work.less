@@ -1,0 +1,213 @@
+/*--------------------------------- start our-work ------------------------------*/
+.our-work {
+	width: 100%;
+	height: auto;
+	padding-top: 65px;
+	padding-bottom: 80px;
+	&__head {
+		text-align: center;
+		margin-bottom: 50px;
+		h2 {
+			text-transform: uppercase;
+			font-family: 'Frutiger-Heavy';
+			font-weight: 400;
+			color: @green;
+			padding-top: 8px;
+		}
+		span {
+			font-family: 'Frutiger-BookIt';
+			display: block;
+			font-style: italic;
+			text-transform: none;
+			font-size: 1.8rem;
+			color: #011727;
+		}
+	}
+	&__content {
+		padding-left: 15px;
+		position: relative;
+		p {
+			font-family: 'Frutiger-Book';
+			line-height: 1.6;
+		}
+		&:before {
+			content:"";
+			display: block;
+			width: 5px;
+			height: 85px;
+			background: @green;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+	&__slider {
+		padding-top: 50px;
+	}
+	&__slide {					    	       
+	    overflow: hidden;	    
+	    img {
+	    max-width: 100%;
+	    height: auto;
+	    }
+	}
+	&__pagination {		
+		padding-top: 25px;
+		&--site {
+			text-align: center;
+			a {
+				font-family: 'Frutiger-Book';
+				font-size: 2.2rem;
+				color: #002946;
+				border-bottom: 1px solid #002946;
+				&:hover {
+					text-decoration: none;
+					color: @green;
+					border-bottom: 1px dashed @green;					
+				}
+				&:before {
+					content: ' ';
+					display: block;
+					width: 24px;
+					height: 24px;
+					background: url("@{dir}chain-links.jpg") no-repeat top center;
+					background-size: cover;
+					position: absolute;
+					top: 5px;
+					left: 45px;
+				}
+			}
+		}
+		&--work {
+			text-align: center;
+			padding-top: 5px;
+			a {
+				font-family: 'Frutiger-Book';
+				font-size: 1.8rem;
+				color: #002946;
+				&.btn-work-left:before {
+					content: ' ';
+					display: block;
+					width: 19px;
+					height: 14px;
+					background: url("@{dir}left-arrow.png") no-repeat top center;
+					background-size: cover;
+					position: absolute;
+					top: 10px;
+					left: 20px;
+					-webkit-transition: all 0.5s ease;
+    				transition: all 0.5s ease;
+				}
+				&.btn-work-right:after{
+					content: ' ';
+					display: block;
+					width: 19px;
+					height: 14px;
+					background: url("@{dir}right-arrow.png") no-repeat top center;
+					background-size: cover;
+					position: absolute;
+					top: 10px;
+					right: 20px;
+					-webkit-transition: all 0.5s ease;
+    				transition: all 0.5s ease;
+				}
+				&:hover {
+					text-decoration: none;
+					color: @green;
+					&.btn-work-left:before {
+						content: ' ';
+						display: block;
+						width: 19px;
+						height: 14px;
+						background: url("@{dir}left-arrow-before.png") no-repeat top center;
+						background-size: cover;
+						position: absolute;
+						top: 10px;
+						left: 20px;
+					}
+					&.btn-work-right:after{
+						content: ' ';
+						display: block;
+						width: 19px;
+						height: 14px;
+						background: url("@{dir}right-arrow-after.png") no-repeat top center;
+						background-size: cover;
+						position: absolute;
+						top: 10px;
+						right: 20px;
+					}					
+				}
+			}									
+		}		
+	}
+} 
+.icon-wrap {
+	text-align: center;
+	ul {
+		padding: 0;
+		margin: 0;
+		li {
+			list-style-type: none;
+			display: inline-block;
+			vertical-align: top;
+			padding-left: 30px;
+		}
+	}
+	&__icon {
+		img {
+			width: 36px;
+			height: auto;
+		}
+	}
+	&__signature {		
+		padding-top: 10px;
+		p {
+			font-family: 'Frutiger';
+			font-size: 1.8rem;
+		}
+	}
+}
+.owl-carousel .owl-stage-outer {
+	box-shadow: -5.251px 5.902px 7px 0px rgba(53, 53, 53, 0.35);
+}
+.owl-prev, .owl-next {
+    text-indent: -9999px;
+}
+#our-work-slider .owl-dots .owl-dot {
+    display: none;
+}
+#our-work-slider .owl-prev {	
+    position: absolute;
+    left: -45px;
+    top: 40%;
+}
+#our-work-slider .owl-prev {
+	width: 15px;
+    background: url("@{dir}arrow-left-before.jpg") no-repeat top center;
+    background-size: cover;
+    webkit-transition: 0.35s ease;
+    transition: 0.35s ease;
+}
+#our-work-slider .owl-prev:hover {
+    background: url("@{dir}arrow-left-after.jpg") no-repeat top center;
+    background-size: cover;
+}
+#our-work-slider .owl-next {	
+    position: absolute;
+    right: -45px;
+    top: 40%;
+}
+#our-work-slider .owl-next {
+	width: 15px;
+    background: url("@{dir}arrow-right-before.jpg") no-repeat top center;
+    background-size: cover;
+    webkit-transition: 0.35s ease;
+    transition: 0.35s ease;
+}
+#our-work-slider .owl-next:hover {
+    background: url("@{dir}arrow-right-after.jpg") no-repeat top center;
+    background-size: cover;
+}
+
+
+/*--------------------------------- end our-work ------------------------------*/
